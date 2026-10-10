@@ -28,10 +28,10 @@ export default function Footer() {
           <div className="md:col-span-3 space-y-3">
             <h4 className="text-xs font-mono uppercase font-bold tracking-widest text-[#f5f5f4]">Navigation</h4>
             <ul className="space-y-2 text-xs font-medium">
-              <li><a href="#services" className="hover:text-[#d97706] transition-colors">Capabilities</a></li>
+              <li><a href="#capabilities" className="hover:text-[#d97706] transition-colors">Capabilities</a></li>
               <li><a href="#projects" className="hover:text-[#d97706] transition-colors">Selected Work</a></li>
-              <li><a href="#tech" className="hover:text-[#d97706] transition-colors">Engineering Journal</a></li>
-              <li><a href="#contact" className="hover:text-[#d97706] transition-colors">Contact Studio</a></li>
+              <li><a href="#stack" className="hover:text-[#d97706] transition-colors">Stack</a></li>
+              <li><a href="#about" className="hover:text-[#d97706] transition-colors">About Studio</a></li>
             </ul>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* Lower Copyright Row */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono">
-          <p>© {new Date().getFullYear()} Jaimini Studio. All rights reserved.</p>
+          <p>© 2026 Jaimini Studio. All rights reserved.</p>
           <p className="text-[11px] text-[#78716c]">Built with Next.js 15, Tailwind CSS & Framer Motion.</p>
         </div>
 
