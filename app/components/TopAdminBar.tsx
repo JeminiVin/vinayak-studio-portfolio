@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Mail, Phone, Globe, Terminal } from "lucide-react";
+import { Mail, Globe, Terminal } from "lucide-react";
 
 export default function TopAdminBar() {
   return (
@@ -19,11 +19,21 @@ export default function TopAdminBar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <span className="text-[#a8a29e]">Stack: Next.js 15 • Supabase • Node.js</span>
+          {/* Live Status Badge */}
+          <div className="flex items-center gap-2 bg-[#27272a] px-3 py-0.5 rounded-full border border-[#3f3f46]">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span className="text-[10px] uppercase font-bold text-emerald-400 tracking-wider">
+              Systems Live
+            </span>
+          </div>
+
           <span className="text-[#44403c]">|</span>
-          <div className="flex items-center gap-1 text-[#d97706] font-semibold cursor-pointer hover:underline">
+          <div className="flex items-center gap-1 text-[#d97706] font-semibold">
             <Globe className="w-3 h-3" />
-            <span>Remote / Worldwide</span>
+            <span>Jaipur / Remote</span>
           </div>
         </div>
       </div>
